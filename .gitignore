@@ -75,10 +75,10 @@ com_crashlytics_export_strings.xml
 crashlytics.properties
 crashlytics-build.properties
 
-implementation/bin/
-implementation/build/
+bin/
+build/
 
-implementation/data/sessions/
-implementation/data/documents/
+data/sessions/
+data/documents/
 
 
