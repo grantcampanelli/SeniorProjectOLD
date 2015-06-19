@@ -1,0 +1,101 @@
+<div class="modal-content">
+
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                aria-hidden="true">&times;</span></button>
+        <h2 class="modal-title" id="gridSystemModalLabel">Change Grade Scheme</h2>
+    </div>
+    <div class="modal-body">
+        <div class="container-fluid">
+            <form id="gradeSchemeForm" class=gradeScheme form-horizontal col-sm-12
+            ">
+
+
+            <div class="form-group col-sm-12">
+                <label class="col-sm-3 col-sm-offset-3 control-label">Course Scheme</label>
+
+                <div class="col-sm-6 btn-group grade-scheme-buttons" data-toggle="buttons" aria-label="Course Scheme">
+                    <label class="col-sm-3 graded btn btn-default"><input id="graded" name="grade-scheme" value="1"
+                                                                          type="radio" autocomplete="off">Graded</input>
+                    </label>
+                    <label class="col-sm-3 pass-fail btn btn-default"><input id="pass-fail" name="grade-scheme"
+                                                                             value="0" type="radio" autocomplete="off">Pass
+                        / Fail</input></label>
+                </div>
+            </div>
+
+            <div class="form-group col-sm-12">
+                <hr>
+            </div>
+
+            <div class="form-group col-sm-12">
+                <h4 class="text-center">Set minimum grades for a graded course</h4>
+            </div>
+
+            <div class="form-group col-sm-12">
+                <label for="grade-scheme-min-a" class="col-sm-3 col-sm-offset-3 control-label">Minimum For 'A'</label>
+
+                <div class="col-sm-3">
+                    <input id="grade-scheme-min-a" type="number" min="1" max="99" required="false"
+                           class="min-a form-control" type="text" name="minA" value="">
+                </div>
+            </div>
+
+            <div class="form-group col-sm-12">
+                <label for="grade-scheme-min-b" class="col-sm-3 col-sm-offset-3 control-label">Minimum For 'B'</label>
+
+                <div class="col-sm-3">
+                    <input id="grade-scheme-min-b" type="number" min="1" max="99" required="false"
+                           class="min-b form-control" type="text" name="minB" value="">
+                </div>
+            </div>
+
+            <div class="form-group col-sm-12">
+                <label for="grade-scheme-min-c" class="col-sm-3 col-sm-offset-3 control-label">Minimum For 'C'</label>
+
+                <div class="col-sm-3">
+                    <input id="grade-scheme-min-c" type="number" min="1" max="99" required="false"
+                           class="min-c form-control" type="text" name="minC" value="">
+                </div>
+            </div>
+
+            <div class="form-group col-sm-12">
+                <label for="grade-scheme-min-d" class="col-sm-3 col-sm-offset-3 control-label">Minimum For 'D'</label>
+
+                <div class="col-sm-3">
+                    <input id="grade-scheme-min-d" type="number" min="1" max="99" required="false"
+                           class="min-d form-control" type="text" name="minD" value="">
+                </div>
+            </div>
+
+            <div class="form-group col-sm-12">
+                <hr>
+            </div>
+
+
+            <div class="form-group col-sm-12">
+                <h4 class="text-center">Set minimum grade for a pass / fail course</h4>
+            </div>
+
+            <div class="form-group col-sm-12">
+                <label for="grade-scheme-min-pass" class="col-sm-3 col-sm-offset-3 control-label">Minimum To
+                    Pass</label>
+
+                <div class="col-sm-3">
+                    <input id="grade-scheme-min-pass" type="number" min="1" max="99" required="false"
+                           class="min-pass form-control" type="text" name="minPass" value="">
+                </div>
+            </div>
+
+
+            </form>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <div class="error text-center"></div>
+        <button type="button" data-loading-text="Loading..." class="save btn btn-primary" autocomplete="off">Save
+        </button>
+        <button type="button" class="cancel btn btn-default" data-dismiss="modal">Cancel</button>
+    </div>
+
+</div>

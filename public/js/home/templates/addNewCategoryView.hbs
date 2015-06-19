@@ -1,0 +1,58 @@
+<div class="modal-content">
+
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                aria-hidden="true">&times;</span></button>
+        <h2 class="modal-title" id="gridSystemModalLabel">Add a New Category</h2>
+    </div>
+    <div class="modal-body">
+        <div class="container-fluid">
+            <form class="new-category form-horizontal col-sm-12">
+
+
+                <div class="form-group">
+
+                    <label for="new-category-parent-category" class="col-sm-3 col-sm-offset-1 control-label">Parent
+                        Category</label>
+
+                    <div class="col-sm-6">
+
+                        <select id="new-category-parent-category" class="parent-category form-control"
+                                name="new-category-parent-category"></select>
+                    </div>
+                </div>
+
+                <div class="form-group">
+
+                    <label for="new-category-name" class="col-sm-3 col-sm-offset-1 control-label">Category Name</label>
+
+                    <div class="col-sm-6">
+                        <input id="new-category-name" required="true" class="name form-control" type="text" name="name"
+                               placeholder="i.e. Labs">
+                    </div>
+                </div>
+
+                <div class="form-group">
+
+                    <label for="new-category-weight" class="col-sm-3 col-sm-offset-1 control-label">Category
+                        Weight</label>
+
+                    <div class="col-sm-6">
+                        <input id="new-category-weight" required="true" class="weight form-control" type="text"
+                               name="weight" placeholder="i.e. .5">
+                    </div>
+                </div>
+                <div class="form-group">
+
+
+            </form>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <div class="error text-center"></div>
+        <button type="button" data-loading-text="Loading..." class="save btn btn-primary" autocomplete="off">Save
+        </button>
+        <button type="button" class="cancel btn btn-default" data-dismiss="modal">Cancel</button>
+    </div>
+
+</div>

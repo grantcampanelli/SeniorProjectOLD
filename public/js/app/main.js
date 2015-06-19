@@ -15,7 +15,8 @@ requirejs.config({
       text: 'text',
       templates: '../../templates',
       ctemplates: '../course/templates',
-      api: '../../api'
+      api: '../../api',
+      home: '../home'
    },
    // The shim configuration is simple to use:
    // (1) one states the dependencies (deps), if any, (which may be from the
@@ -37,14 +38,15 @@ define(function (require) {
    var App = require('app/app');
    var Radio = require('backbone.radio');
    require('user/module');
-   require('course/_init');
-   require('course/module');
-   require('app/chart');
-   require('app/modifyAssignment');
-   require('app/modifyCategory');
-   require('app/modifyClass');
-   require('app/modifyStudent');
-   require('app/addNewStudent')
+   require('home/_init');
+   //require('course/_init');
+   //require('course/module');
+   //require('app/chart');
+   //require('app/modifyAssignment');
+   //require('app/modifyCategory');
+   //require('app/modifyClass');
+   //require('app/modifyStudent');
+   //require('app/addNewStudent')
    require('bootstrap');
    require('domReady!');
    

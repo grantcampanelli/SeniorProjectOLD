@@ -1,0 +1,52 @@
+<div class="modal-content">
+
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                aria-hidden="true">&times;</span></button>
+        <h2 class="modal-title" id="gridSystemModalLabel">Select a Student</h2>
+    </div>
+    <div class="modal-body">
+        <div class="container-fluid">
+            <form class="selectStudent form-horizontal col-sm-12">
+
+
+                <div class="form-group">
+
+                    <label for="category-selected" class="col-sm-3 col-sm-offset-1 control-label">Student</label>
+
+                    <div class="col-sm-6">
+                        <!--
+                         <select id="category-selected" required="true" class="studentSelected form-control" type="text" name="studentSelected" placeholder="i.e. John Doe"></select>
+                        -->
+                        <select id="student-selected" class="studentSelected form-control" name="config[students]">
+                            {{#each studentsoption }}
+                                <option value="{{emplId}}">{{last}}, {{first}}</option>
+                            {{/each}}
+                        </select>
+                    </div>
+                </div>
+
+            </form>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <div class="error text-center"></div>
+        <button type="submit" class="ok btn btn-primary" autocomplete="off">Ok</button>
+        <button type="button" class="cancel btn btn-default" data-dismiss="modal">Cancel</button>
+    </div>
+
+</div>
+
+<!--
+
+ <option value="{{studentsoption.index}}" >{{studentsoption.fullName}}</option>
+
+<p>
+    <label>Mode:</label>
+    <select name="config[mode]">
+        {{#each modeoption }}
+            <option value="{{value}}" {{#selected}}selected="selected"{{/selected}}>{{name}}</option>
+        {{/each}}
+    </select>
+</p>
+-->

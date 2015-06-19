@@ -4,8 +4,8 @@ define(function (require) {
     var Backbone = require('util/backbone-helper');
     var Q = require('q');
     var Radio = require('backbone.radio');
-    
-    var UserCourseList = require('user/user-course-list');
+
+    //var UserCourseList = require('user/user-course-list');
     
     
     var LoginView = require('user/login-view')
@@ -36,18 +36,18 @@ define(function (require) {
         }
         return deferred.promise;
     }
-    
-    function loadUserCourses() {
-        return login().then(function(user) {
-            var userCourses = new UserCourseList({user: user});
-            userCourses.once('fetch', function() {
-                userChannel.trigger("user:courses:fetch", userCourses);
-            });
-            return userCourses.fetch().then(function() {
-                return userCourses;
-            });
-        }).done();
-    }
+
+    //function loadUserCourses() {
+    //    return login().then(function(user) {
+    //        var userCourses = new UserCourseList({user: user});
+    //        userCourses.once('fetch', function() {
+    //            userChannel.trigger("user:courses:fetch", userCourses);
+    //        });
+    //        return userCourses.fetch().then(function() {
+    //            return userCourses;
+    //        });
+    //    }).done();
+    //}
        
     
     session.on('all', function() {
@@ -58,7 +58,7 @@ define(function (require) {
     userChannel.comply('login', login);
     userChannel.reply('login', login);
     userChannel.reply('user', login);
-    userChannel.reply('user:courses', loadUserCourses);
+    //userChannel.reply('user:courses', loadUserCourses);
     
     //userChannel.on('all', console.log);
     

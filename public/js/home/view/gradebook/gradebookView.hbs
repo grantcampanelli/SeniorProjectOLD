@@ -1,0 +1,75 @@
+<div class="row col-sm-12">
+    <div style="padding-right: 0; padding-botton: 0; border-right: 1px solid #ddd;"
+         class="gradebook-students col-sm-2 col-xs-3 ">
+        <table class="gradebook-students table table-condensed table-bordered ">
+            <thead></thead>
+            <tbody></tbody>
+            <tfoot></tfoot>
+        </table>
+    </div>
+    <div style="padding-left: 0; padding-botton: 0; border-right: 1px solid #ddd; border-left: 0px solid #ddd;"
+         class="gradebook table-responsive col-sm-9 col-xs-8">
+        <table style="border-left: 0px solid #ddd;margin-bottom: 0; "
+               class="table-hover gradebook table table-condensed table-bordered table-bordered">
+            <thead></thead>
+            <tbody></tbody>
+            <tfoot></tfoot>
+        </table>
+    </div>
+    <div style="padding-left: 0; padding-botton: 0; border-left: 1px solid #ddd; "
+         class="gradebook-students  col-sm-1 col-xs-1">
+        <table class="gradebook-summary table table-condensed table-bordered text-right">
+            <thead></thead>
+            <tbody></tbody>
+            <tfoot></tfoot>
+        </table>
+    </div>
+</div>
+
+<div class="row col-sm-12  container-fluid" style="padding-top:20px;">
+    <div class="bar-chart-area col-sm-4 text-center">
+        <canvas class="bar-chart-canvas" height="400px" width="400px"></canvas>
+    </div>
+    <div class="pie-chart-area col-sm-4 text-center">
+        <canvas class="pie-chart-canvas" height="400px" width="400px"></canvas>
+    </div>
+    <div class="min-grades-area col-sm-4 text-center">
+        <form class=gradeScheme form-horizontal col-sm-12
+        ">
+        <div class="form-group col-sm-12">
+            <label for="grade-scheme-min-a" class="col-sm-6 col-sm-offset-1 control-label">Minimum For 'A'</label>
+
+            <div class="col-sm-3">
+                <input id="grade-scheme-min-a" type="number" min="1" max="99" required="false"
+                       class="min-a form-control" type="text" name="minA" value="">
+            </div>
+        </div>
+
+        <div class="form-group col-sm-12">
+            <label for="grade-scheme-min-b" class="col-sm-6 col-sm-offset-1 control-label">Minimum For 'B'</label>
+
+            <div class="col-sm-3">
+                <input id="grade-scheme-min-b" type="number" min="1" max="99" required="false"
+                       class="min-b form-control" type="text" name="minB" value="">
+            </div>
+        </div>
+
+        <div class="form-group col-sm-12">
+            <label for="grade-scheme-min-c" class="col-sm-6 col-sm-offset-1 control-label">Minimum For 'C'</label>
+
+            <div class="col-sm-3">
+                <input id="grade-scheme-min-c" type="number" min="1" max="99" required="false"
+                       class="min-c form-control" type="text" name="minC" value="">
+            </div>
+        </div>
+
+        <div class="form-group col-sm-12">
+            <label for="grade-scheme-min-d" class="col-sm-6 col-sm-offset-1 control-label">Minimum For 'D'</label>
+
+            <div class="col-sm-3">
+                <input id="grade-scheme-min-d" type="number" min="1" max="99" required="false"
+                       class="min-d form-control" type="text" name="minD" value="">
+            </div>
+        </div>
+    </div>
+</div>

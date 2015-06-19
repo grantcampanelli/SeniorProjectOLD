@@ -1,0 +1,94 @@
+<div class="modal-content">
+
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                aria-hidden="true">&times;</span></button>
+        <h2 class="modal-title" id="gridSystemModalLabel">Modify Course</h2>
+    </div>
+    <div class="modal-body">
+        <div class="container-fluid">
+            <form class="modifyCourse form-horizontal col-sm-12">
+
+
+                <div class="form-group">
+
+                    <label for="modify-course-courseCode" class="col-sm-3 col-sm-offset-1 control-label">Course
+                        Abbreviation</label>
+
+                    <div class="col-sm-6">
+                        <input id="modify-course-courseCode" required="true" class="courseCode form-control" type="text"
+                               name="courseCode" placeholder="i.e. CPE">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="modify-course-courseNumber" class="col-sm-3 col-sm-offset-1 control-label">Course
+                        Number</label>
+
+                    <div class="col-sm-6">
+                        <input id="modiy-course-courseNumber" required="true" class="courseNumber form-control"
+                               type="text" name="courseNumber" placeholder="i.e. 101">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="modify-course-courseSection"
+                           class="col-sm-3 col-sm-offset-1 control-label">Section</label>
+
+                    <div class="col-sm-6">
+                        <input id="modify-course-courseSection" type="number" min="1" max="99" required="false"
+                               class="courseSection form-control" type="text" name="courseNumber">
+                    </div>
+                </div>
+
+
+                <div class="form-group">
+                    <label class="col-sm-3 col-sm-offset-1 control-label">Term</label>
+
+                    <div class="col-sm-8 btn-group" data-toggle="buttons" aria-label="Course Term">
+                        <label class="col-sm-2 winter btn btn-default"><input type="radio"
+                                                                              autocomplete="off"/>Winter</label>
+                        <label class="col-sm-2 spring btn btn-default"><input type="radio"
+                                                                              autocomplete="off"/>Spring</label>
+                        <label class="col-sm-2 summer btn btn-default"><input type="radio"
+                                                                              autocomplete="off"/>Summer</label>
+                        <label class="col-sm-2 fall btn btn-default"><input type="radio"
+                                                                            autocomplete="off"/>Fall</label>
+                    </div>
+                </div>
+
+
+                <div class="form-group">
+                    <label for="modify-course-year" class="col-sm-3 col-sm-offset-1 control-label">Year</label>
+
+                    <div class="col-sm-6">
+                        <input id="modify-course-year" required="true" class=" courseYear form-control" type="text"
+                               name="year" placeholder="Year">
+                    </div>
+                </div>
+
+            </form>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <div class="error text-center"></div>
+        <button type="button" data-loading-text="Loading..." class="save btn btn-primary">Save</button>
+        <button type="button" class="cancel btn btn-default" data-dismiss="modal">Cancel</button>
+    </div>
+
+</div>
+
+<!--
+<button class="modifyClassButton">Modify Class Information</button>
+<div class="popup-dialog">
+    <h3>Modify Class Information</h3>
+    Class Code <input class="classCode" type="text" name="classCode" placeholder="i.e. CPE"><br>
+    Class Number <input class="classNumber" type="text" name="classNumber" placeholder="i.e. 101"><br>
+    <p>Clicking OK below will edit the class information.</p>
+    <button class="ok">OK</button>
+    <button class="cancel">Cancel</button>
+</div>
+-->
+
+
+

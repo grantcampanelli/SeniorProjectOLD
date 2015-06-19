@@ -1,5 +1,6 @@
-define(function(require) {
+define(function (require) {
     //require('course/view/gradebook/_init');
+    require('home/view/main-view');
     //require('course/view/course-list-view');
     //require('course/view/course-permissions-view');
     //require('course/view/delete-student-view');

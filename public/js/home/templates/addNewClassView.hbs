@@ -1,0 +1,90 @@
+<div class="modal-content">
+
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                aria-hidden="true">&times;</span></button>
+        <h2 class="modal-title" id="gridSystemModalLabel">New Course</h2>
+    </div>
+    <div class="modal-body">
+        <div class="container-fluid">
+            <form class="newCourse form-horizontal col-sm-12">
+
+
+                <div class="form-group">
+
+                    <label for="new-course-classCode" class="col-sm-3 col-sm-offset-1 control-label">Course
+                        Abbreviation</label>
+
+                    <div class="col-sm-6">
+                        <input id="new-course-classCode" required="true" class="classCode form-control" type="text"
+                               name="classCode" placeholder="i.e. CPE">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="new-course-classNumber" class="col-sm-3 col-sm-offset-1 control-label">Course
+                        Number</label>
+
+                    <div class="col-sm-6">
+                        <input id="new-course-classNumber" required="true" class="classNumber form-control" type="text"
+                               name="classNumber" placeholder="i.e. 101">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="new-course-classSection" class="col-sm-3 col-sm-offset-1 control-label">Section</label>
+
+                    <div class="col-sm-6">
+                        <input id="new-course-classSection" type="number" min="1" max="99" required="false"
+                               class="classSection form-control" type="text" name="classNumber">
+                    </div>
+                </div>
+
+
+                <div class="form-group">
+                    <label class="col-sm-3 col-sm-offset-1 control-label">Term</label>
+
+                    <div class="col-sm-8 btn-group" data-toggle="buttons" aria-label="Course Term">
+                        <label class="col-sm-2 winter btn btn-default"><input type="radio"
+                                                                              autocomplete="off">Winter</input></label>
+                        <label class="col-sm-2 spring btn btn-default"><input type="radio"
+                                                                              autocomplete="off">Spring</input></label>
+                        <label class="col-sm-2 summer btn btn-default"><input type="radio"
+                                                                              autocomplete="off">Summer</input></label>
+                        <label class="col-sm-2 fall btn btn-default"><input type="radio" autocomplete="off">Fall</input>
+                        </label>
+                    </div>
+                </div>
+
+
+                <div class="form-group">
+                    <label for="new-course-year" class="col-sm-3 col-sm-offset-1 control-label">Year</label>
+
+                    <div class="col-sm-6">
+                        <input id="new-course-year" required="true" class=" classYear form-control" type="text"
+                               name="year" placeholder="Year">
+                    </div>
+                </div>
+
+            </form>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <div class="error text-center"></div>
+        <button type="button" data-loading-text="Loading..." class="save btn btn-primary" autocomplete="off">Save
+        </button>
+        <button type="button" class="cancel btn btn-default" data-dismiss="modal">Cancel</button>
+    </div>
+
+</div>
+<!--
+<button class="addNewClassButton">Add a New Class</button>
+<div class="popup-dialog">
+    <h3>Add a New Class</h3>
+    Class Code <input class="classCode" type="text" name="classCode" placeholder="i.e. CPE"><br>
+    Class Number <input class="classNumber" type="text" name="classNumber" placeholder="i.e. 101"><br>
+    <p>Clicking OK below will generate a new gradebook for the class entered above.</p>
+    <button class="ok">OK</button>
+    <button class="cancel">Cancel</button>
+</div>
+-->
