@@ -43,12 +43,12 @@ exports.db = {};
  * Deletes all model documents from the database on startup.
  * Use with care!
  */
-exports.db.clearOnStartup = true;
+exports.db.clearOnStartup = false;
 
 /**
  * Will create mock model documents on startup.
  */
-exports.db.generateMockData = true;
+exports.db.generateMockData = false;
 
 /* if embedded database then these settings */
 /**
