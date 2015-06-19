@@ -11,7 +11,7 @@ exports.http = {};
 /**
  * The server port to listen on.
  */
- exports.http.port = 8080;
+ exports.http.port = 8082;
 
 /**
  * Creates missing directories.
@@ -64,7 +64,7 @@ exports.db.memStore = false;
 exports.db.path = "data/documents";
 
 /* if mongo database then these settings */
-exports.db.mongoUrl = 'mongodb://127.0.0.1/grader'
+exports.db.mongoUrl = 'mongodb://127.0.0.1/seniorproject'
 
 /* SESSION STORAGE SETTINGS */
 exports.session = {};
